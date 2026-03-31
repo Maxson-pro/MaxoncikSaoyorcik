@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-background-color: #f0f0f0; -fx-padding: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.maxonciksaoyorcik.HelloController">
+
+    <Button fx:id="btnReset" onAction="#reset" style="-fx-font-size: 14;" text="Начать заново 😊" />
+
+    <GridPane fx:id="pole" alignment="CENTER" hgap="2" vgap="2" />
+
+</VBox>
