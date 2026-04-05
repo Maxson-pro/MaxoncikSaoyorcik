@@ -4,10 +4,16 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.VBox?>
 
+<?import javafx.scene.layout.HBox?>
 <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #f0f0f0; -fx-padding: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.maxonciksaoyorcik.HelloController">
 
-    <Button fx:id="btnReset" onAction="#reset" style="-fx-font-size: 14;" text="Начать заново 😊" />
-
+    <Button fx:id="btnReset" onAction="#reset" style="-fx-font-size: 14;" text="Начать заново" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="писюн (9x9)" onAction="#Easy"/>
+        <Button text="качёк (16x16)" onAction="#Medium"/>
+        <Button text="еблан (30x16)" onAction="#Hard"/>
+    </HBox>
     <GridPane fx:id="pole" alignment="CENTER" hgap="2" vgap="2" />
+
 
 </VBox>

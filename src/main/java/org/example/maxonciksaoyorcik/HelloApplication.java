@@ -10,10 +10,10 @@ public class HelloApplication extends Application {
     public void start(Stage stage) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 420, 520);
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setResizable(true);
             stage.setTitle("Saper 9x9");
             stage.setScene(scene);
-            stage.setResizable(false);
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
